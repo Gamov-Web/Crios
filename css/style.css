@@ -1,0 +1,157 @@
+body {
+	font-family: "Montserrat";
+	font-size: 14px;
+	box-sizing: border-box;
+}
+
+h1,h2 {
+	padding: 0;
+	margin: 0;
+}
+
+a{
+	text-decoration: none;
+}
+
+.container {
+	width: 1500px;
+	margin: 0 auto;
+}
+
+/*Header*/
+
+.header {
+	background: url(../img/bg.png) no-repeat 50% 200%;
+	height: 100vh;
+	min-height: 1520px;
+}
+
+.top__header {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 170px;
+}
+
+.btn{
+	width: 60px;
+	height: 60px;
+	padding: 21px;
+	font-size: 19px;
+	box-sizing: border-box;
+	border-radius: 50%;
+	box-shadow: 0 0 65px rgba(0,0,0,0.2);
+	margin-top: 57px;
+	cursor: pointer;
+}
+
+.logo {
+	box-sizing: border-box;
+	margin-top: -207px;
+	padding-top: 248px;
+	width: 415px;
+	height: 415px;
+	text-align: center;
+	border-radius: 50%;
+	box-shadow: 0 0 65px rgba(0,0,0,0.2);
+}
+
+.logo__title {
+	font-size: 48px;
+	color: #43a9ff;
+	font-weight: 700;
+}
+
+.logo__text {
+	font-size: 18px;
+	color: #eaebec;
+}
+
+.offer {
+	text-align: center;
+}
+
+.offer__title {
+	font-size: 48px;
+	font-weight: 700;
+	margin-bottom: 22px; 
+}
+
+.offer__text {
+	font-size: 18px;
+	color: #d2d5d8;
+	font-weight: 400;
+	margin-bottom: 86px;
+}
+
+.button {
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 14px;
+	color: #43a9ff;
+	background-color: #fff;
+	border: none;
+	border-radius: 22px;
+	box-shadow: 0 0 65px rgba(0,0,0,0.2);
+	padding: 20px 41px;
+	cursor: pointer;
+	outline: none;
+}
+
+/*Adventages*/
+
+.adventages {
+	padding: 85px 0 125px 0;
+}
+
+.advent {
+	margin-bottom: 21px;
+}
+
+.adventures {
+	margin-bottom: 91px;
+}
+
+.trigers {
+	display: flex;
+	justify-content: space-between;
+}
+
+.triger {
+	text-align: center;
+	width: 264px;
+}
+
+.triger__image {
+	margin-bottom: 33px;
+}
+
+.triger__title {
+	font-size: 18px;
+	margin-bottom: 40px;
+	line-height: 18px;
+	letter-spacing: 0.1px;
+}
+
+.triger__text {
+	font-size: 14px;
+	color: #d9dbdd;
+	line-height: 24px;
+	letter-spacing: 0.1px;
+}
+
+.check {
+	display: block;
+	margin: 0 auto;
+	margin-top: 91px;
+}
+
+/* About */
+
+.article {
+	display: flex;
+	justify-content: space-between;
+}
+
+.end {
+	flex-direction: row-reverse;
+}
