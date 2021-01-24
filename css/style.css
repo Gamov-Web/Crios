@@ -1,89 +1,36 @@
+html {
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
 body {
 	font-family: "Montserrat";
 	font-size: 14px;
-	box-sizing: border-box;
-}
-
-h1,h2 {
-	padding: 0;
-	margin: 0;
-}
-
-a{
-	text-decoration: none;
 }
 
 .container {
-	width: 1500px;
+	max-width: 1500px;
 	margin: 0 auto;
+	padding: 0 15px;
 }
 
-/*Header*/
-
-.header {
-	background: url(../img/bg.png) no-repeat 50% 200%;
-	height: 100vh;
-	min-height: 1520px;
-}
-
-.top__header {
-	display: flex;
-	justify-content: space-between;
-	margin-bottom: 170px;
-}
-
-.btn{
-	width: 60px;
-	height: 60px;
-	padding: 21px;
-	font-size: 19px;
-	box-sizing: border-box;
-	border-radius: 50%;
-	box-shadow: 0 0 65px rgba(0,0,0,0.2);
-	margin-top: 57px;
-	cursor: pointer;
-}
-
-.logo {
-	box-sizing: border-box;
-	margin-top: -207px;
-	padding-top: 248px;
-	width: 415px;
-	height: 415px;
-	text-align: center;
-	border-radius: 50%;
-	box-shadow: 0 0 65px rgba(0,0,0,0.2);
-}
-
-.logo__title {
+.title-h2 {
+	margin: 0;
 	font-size: 48px;
-	color: #43a9ff;
-	font-weight: 700;
-}
-
-.logo__text {
-	font-size: 18px;
-	color: #eaebec;
-}
-
-.offer {
-	text-align: center;
-}
-
-.offer__title {
-	font-size: 48px;
-	font-weight: 700;
-	margin-bottom: 22px; 
-}
-
-.offer__text {
-	font-size: 18px;
-	color: #d2d5d8;
 	font-weight: 400;
-	margin-bottom: 86px;
 }
 
-.button {
+a {
+	text-decoration: none;
+}
+
+.btn {
+	display: inline-block;
 	text-transform: uppercase;
 	font-weight: 700;
 	font-size: 14px;
@@ -91,29 +38,115 @@ a{
 	background-color: #fff;
 	border: none;
 	border-radius: 22px;
-	box-shadow: 0 0 65px rgba(0,0,0,0.2);
+	box-shadow: 0px 0px 35px 0px rgba(218, 229, 239, 0.35);
 	padding: 20px 41px;
 	cursor: pointer;
-	outline: none;
+}
+
+/*Header*/
+
+.header {
+	padding: 190px 0 0;
+	margin-bottom: 252px;
+}
+
+.header__top {
+	display: flex;
+	justify-content: space-between;
+}
+
+.header__btn {
+	display: inline-block;
+	width: 60px;
+	height: 60px;
+	padding: 21px;
+	border-radius: 50%;
+	background-color: #fff;
+	box-shadow: 0px 0px 65px 0px rgba(218, 229, 239, 1);
+	border: none;
+	cursor: pointer;
+}
+
+.header__btn-line {
+	display: block;
+	width: 18px;
+	height: 2px;
+	background-color: #000;
+	position: relative;
+}
+
+.header__btn-line::before,
+.header__btn-line::after {
+	content: "";
+	position: absolute;
+	left: 0;
+	width: 18px;
+	height: 2px;
+	background-color: #000;
+}
+
+.header__btn-line::after {
+	top: -7px;
+}
+
+.header__btn-line::before {
+	bottom: -7px;
+}
+
+.logo {
+	position: relative;
+}
+
+.logo::after {
+	content: "";
+	position: absolute;
+    bottom: -137%;
+    left: -58%;
+	width: 415px;
+	height: 415px;
+	border-radius: 50%;
+	box-shadow: 0px 0px 65px 0px rgba(218, 229, 239, 0.55);
+}
+
+.offer {
+	text-align: center;
+	background: url(../img/bg.png) no-repeat center bottom;
+    min-height: 1397px;
+}
+
+.offer__title {
+	margin-bottom: 22px; 
+}
+
+.offer__text {
+	font-size: 18px;
+	font-weight: 400;
+	color: rgba(75, 88, 99, 0.25);
+	margin-bottom: 81px;
 }
 
 /*Adventages*/
 
 .adventages {
-	padding: 85px 0 125px 0;
+	text-align: center;
+	margin: -252px 0 123px;
 }
 
-.advent {
-	margin-bottom: 21px;
+.adventages__text {
+	font-size: 18px;
+	font-weight: 400;
+	color: rgba(75, 88, 99, 0.25);
+	margin: 0 0 25px 0;
 }
 
-.adventures {
-	margin-bottom: 91px;
+.adventages__title {
+	margin-bottom: 98px;
 }
 
 .trigers {
 	display: flex;
 	justify-content: space-between;
+	margin-bottom: 86px;
 }
 
 .triger {
@@ -127,7 +160,7 @@ a{
 
 .triger__title {
 	font-size: 18px;
-	margin-bottom: 40px;
+	margin-bottom: 36px;
 	line-height: 18px;
 	letter-spacing: 0.1px;
 }
@@ -150,8 +183,27 @@ a{
 .article {
 	display: flex;
 	justify-content: space-between;
+	background-color: #f7f8fb;
 }
 
-.end {
-	flex-direction: row-reverse;
+.article__image {
+	width: 50%;
+}
+
+.article__content {
+	justify-content: center;
+	align-self: center;
+	max-width: 483px;
+	margin: 0 auto;
+}
+
+.article__title {
+	margin-bottom: 52px;
+}
+
+.article__text {
+	font-size: 16px;
+	color: rgba(75, 88, 99, 0.35);
+	line-height: 36px;
+	margin: 0;
 }
